@@ -1,22 +1,17 @@
 <script setup lang="ts">
+import type { Status } from '~/assets/typescript/types';
 
-const props =  defineProps({
-  title: {
-    type: String,
-    default: 'Не работает отопление в подъезде'
-  },
-  adress: {
-    type: String,
-    default: 'Волжский, ул. Ленина, д. 15'
-  },
-  date: {
-    type: String,
-    default: '15.01.2025'
-  },
-  status: {
-    type: String,
-    default:'в работе'
-  }
+
+const props =  withDefaults(defineProps<{
+  title?: string,
+  adress?: string,
+  date?: string,
+  status_variant?: Status
+}>(),{
+    title: 'Не работает отопление в подъезде',
+    adress:  'Волжский, ул. Ленина, д. 15',
+    date: '15.01.2025',
+    variant: 'blue',
 })
 
 
@@ -26,16 +21,12 @@ const props =  defineProps({
     <div class="main-frame">
         <div class="title-frame">
             <p class="title">{{ props.title }}</p>
-            <div class="status-frame">
-                <span class="status">
-                    {{ props.status  }}
-                </span>
-            </div>
+            <status :variant="props.status_variant" v-bind="$attrs"/>
         </div>
         <div class="description-frame">
-            <img src="assets/vectors/map-pin.svg" alt="">
+            <img src="/vectors/map-pin.svg" alt="">
             <p>{{ props.adress }}</p>
-            <img src="assets/vectors/dot.svg" alt="*">
+            <img src="/vectors/dot.svg" alt="*">
             <span>{{ props.date }}</span>
         </div>
     </div>
@@ -60,20 +51,7 @@ const props =  defineProps({
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-.status-frame {
-    display: inline-flex;
-    padding: 6px 8px ;
-    border-radius:7px ;
-    background-color: #EFF6FF ;
-    border: solid 1px #BEDBFF;
-    flex-wrap: nowrap;
-}
-.status {
-    color: #155DFC ;
-    font-size: 14px;
-    font-weight: 500;
-    text-wrap: nowrap;
-}
+
 .title-frame {
     display: flex;
     flex-direction: row;

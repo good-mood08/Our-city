@@ -14,7 +14,7 @@ const props =  defineProps({
   },
   svg: {
     type: String,
-    default:'assets/vectors/house.svg'
+    default:'/vectors/house.svg'
   }
 })
 </script>
@@ -23,7 +23,7 @@ const props =  defineProps({
     <div class="main-frame">
         <div class="block-frame">
             <div class="icon">
-                <img src="assets/vectors/house.svg" alt="eror">
+                <img :src="props.svg" alt="eror">
             </div>
             <div class="text-frame">
                 <h4 class="title">{{ props.title }} </h4>

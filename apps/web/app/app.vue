@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template >
   <div class="gap">
     
@@ -6,8 +10,10 @@
       <appeal  v-for="value in 4"/>
     </selection>
     <selection>
-      <request v-for="value in 4"></request>
+      <request status_variant="red" v-for="value in 4"></request>
     </selection>
+
+   
   
   </div>
 </template>
