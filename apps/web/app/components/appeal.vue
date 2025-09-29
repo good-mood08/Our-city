@@ -46,7 +46,7 @@ const props =  defineProps({
     justify-content: space-between;
     align-items: center;
     /* border:solid 1px ; */
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     background-color: white;
     border-radius: 10px;
 }

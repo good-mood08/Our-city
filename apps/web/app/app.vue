@@ -1,16 +1,18 @@
 <template >
   <div class="gap">
-    <div v-for="value in 4" >
-  
-      <appeal/>
+    
+    
+    <selection>
+      <appeal  v-for="value in 4"/>
+    </selection>
       
-    </div>
-
+    
   </div>
 </template>
 <style scoped>
 .gap {
   display: grid;
   gap: 15px;
+  padding: 20px;
 }
 </style>
