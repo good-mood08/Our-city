@@ -5,8 +5,10 @@
     <selection>
       <appeal  v-for="value in 4"/>
     </selection>
-      
-    
+    <selection>
+      <request v-for="value in 4"></request>
+    </selection>
+  
   </div>
 </template>
 <style scoped>
