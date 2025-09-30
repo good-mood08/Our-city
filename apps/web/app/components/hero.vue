@@ -46,7 +46,7 @@ const props = defineProps({
 .hero {
   margin-top: 65px;
   width: 100%;
-  background: linear-gradient(135deg, #7B2FF7 0%, #00C6FF 100%);
+  background: linear-gradient(to bottom right, #8231DF, #324AC0, #8231DF);
   color: white;
   padding: 30px 0px;
 }
@@ -102,7 +102,7 @@ const props = defineProps({
 
 .stat {
   flex: 1;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 12px;
   text-align: center;
