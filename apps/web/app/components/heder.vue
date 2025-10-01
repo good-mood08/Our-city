@@ -42,7 +42,7 @@ const props = defineProps({
 
   padding: 9px 20px;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 4px rgba(0,0,0,0.25);
 
 }
 
