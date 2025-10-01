@@ -18,7 +18,7 @@ const props = defineProps({
 <template>
   <header class="header">
     <div class="logo-frame">
-      <img src="" alt="logo" class="logo"/>
+      <img src="/vectors/logo.svg" alt="logo" class="logo"/>
       <div class="text-frame">
         <h2 class="title">{{ props.title }}</h2>
         <p class="subtitle">{{ props.subtitle }}</p>
@@ -30,7 +30,7 @@ const props = defineProps({
 
 <style scoped>
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -40,7 +40,7 @@ const props = defineProps({
   justify-content: space-between;
   align-items: center;
 
-  padding: 12px 20px;
+  padding: 9px 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 
@@ -50,11 +50,13 @@ const props = defineProps({
   display: flex;
   align-items: center;
   gap: 12px;
+  
 }
 
 .logo {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 
 .text-frame {

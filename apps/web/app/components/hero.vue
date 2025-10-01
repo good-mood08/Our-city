@@ -46,6 +46,7 @@ const props = defineProps({
 .hero {
   margin-top: 65px;
   width: 100%;
+  /* height: 269px; */
   background: linear-gradient(to bottom right, #8231DF, #324AC0, #8231DF);
   color: white;
   padding: 30px 0px;
@@ -82,15 +83,15 @@ const props = defineProps({
 
 .title {
   margin: 0;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 600;
   line-height: 1.3;
 }
 
 .subtitle {
   margin: 5px 0 0 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 0.9;
 }
 
