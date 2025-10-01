@@ -3,3 +3,11 @@
     padding: 0;
     text-decoration: none;
 }
+
+@font-face {  
+font-family: 'helvetica';  
+src: local('helvetica'), url("/helvetica_regular.otf") format('truetype');  
+}  
+html {  
+font-family: 'helvetica';  
+}  
