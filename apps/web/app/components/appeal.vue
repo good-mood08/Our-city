@@ -20,83 +20,22 @@ const props =  defineProps({
 </script>
 
 <template>
-    <div class="main-frame">
-        <div class="block-frame">
-            <div class="icon">
+    <div class="main-frame flex flex-row py-5 px-2.5 justify-between items-center shadow shadow-stone-400 bg-amber-50 rounded-xl">
+        <div class="block-frame flex justify-center items-center gap-3.75 ">
+            <div class="icon w-12.5 h-12.5 flex justify-center items-center gap-3.75 bg-blue-100 rounded-[100%]">
                 <img :src="props.svg" alt="eror">
             </div>
-            <div class="text-frame">
-                <h4 class="title">{{ props.title }} </h4>
-                <p class="description">{{ props.description }}</p>
+            <div class="text-frame  flex flex-col justify-center">
+                <h4 class="title text-stone-950 font-medium text-sm">{{ props.title }} </h4>
+                <p class="description text-zinc-500 text-sm font-medium">{{ props.description }}</p>
             </div>
         </div>
-        <div class="number-frame">
-            <span class="number">{{ props.number }}</span>
+        <div class="number-frame rounded-xl flex justify-center items-center px-1.5 py-0.5 bg-blue-100 ">
+            <span class="number font-semibold text-sm text-[#155DFC]">{{ props.number }}</span>
         </div>
     </div>
 </template>
 
 
 <style scoped>
-.main-frame {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    padding: 20px 10px ;
-    justify-content: space-between;
-    align-items: center;
-    /* border:solid 1px ; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    background-color: white;
-    border-radius: 10px;
-}
-.block-frame {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-}
-.icon {
-    display: inline-flex;
-    width: 50px;
-    height: 50px;
-    background-color: #DBEAFE;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
-}
-.text-frame {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-.title {
-    margin: 0;
-    color: #000000;
-    font-size:15px;
-    font-weight:600;
-}
-.description {
-    margin: 0;
-    color: #757575;
-    font-size:14px;
-    font-weight:500;
-}
-.number-frame {
-    border-radius: 10px;
-    display: flex;
-    padding:2px 7px ;
-    justify-content: center;
-    align-items: center;
-    background-color: #DBEAFE ;
-}
-.number { 
-    font-size: 15px;
-    font-weight: 600;
-    color: #155DFC;
-}
-
 </style>

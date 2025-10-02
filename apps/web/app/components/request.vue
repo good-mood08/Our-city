@@ -18,12 +18,12 @@ const props =  withDefaults(defineProps<{
 </script>
 
 <template>
-    <div class="main-frame">
-        <div class="title-frame">
-            <p class="title">{{ props.title }}</p>
+    <div class="py-5 px-3.75 content-center items-center bg-amber-50 shadow-sm shadow-stone-400 rounded-xl">
+        <div class="flex flex-row justify-between items-center gap-2.5" >
+            <p class="text-stone-950 font-medium text-sm text-balance">{{ props.title }}</p>
             <status :variant="props.status_variant" v-bind="$attrs"/>
         </div>
-        <div class="description-frame">
+        <div class="flex flex-row items-center gap-0.5 text-sm font-medium text-zinc-500">
             <img src="/vectors/map-pin.svg" alt="">
             <p>{{ props.adress }}</p>
             <img src="/vectors/dot.svg" alt="*">
@@ -31,38 +31,3 @@ const props =  withDefaults(defineProps<{
         </div>
     </div>
 </template>
-
-<style scoped>
-.description-frame {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 1px;
-    color: #6C6C6C;
-    font-size: 14px;
-    font-weight: 500;
-}
-.main-frame {
-    padding:  20px 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-.title-frame {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 10px;
-}
-.title {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-    text-wrap:balance ;
-}
-</style>

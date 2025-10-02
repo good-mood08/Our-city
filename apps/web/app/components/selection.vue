@@ -9,24 +9,8 @@ const props = defineProps({
 
 
 <template>
-<div class="select-frame">
-    <h3 class="title">{{ props.title }}</h3>
+<div class=" flex py-5 flex-col gap-3 justify-start  ">
+    <h3 class=" text-stone-950 text-xl font-medium">{{ props.title }}</h3>
     <slot></slot>
 </div>
 </template>
-
-
-<style scoped>
-.select-frame {
-    display: flex;
-    padding: 20px 0;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: start;
-}
-.title {
-    font-size: 20px;
-    font-weight: 500;
-
-}
-</style>
