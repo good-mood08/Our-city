@@ -1,64 +1,30 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: "Вместе мы делаем город лучше"
-  },
-  subtitle: {
-    type: String,
-    default: "Электронные услуги администрации города Волжский"
-  },
-  solved: {
-    type: Number,
-    default: 124
-  },
-  inProgress: {
-    type: Number,
-    default: 16
-  }
-})
+
 </script>
 
 <template>
   <section class="hero">
-    <div class="content">
-      <div class="text-block">
-        <h1 class="title">{{ props.title }}</h1>
-        <p class="subtitle">{{ props.subtitle }}</p>
-      </div>
 
-      <div class="stats">
-        <div class="stat">
-          <span class="number">{{ props.solved }}</span>
-          <span class="label">решено в этом месяце</span>
-        </div>
-        <div class="stat">
-          <span class="number">{{ props.inProgress }}</span>
-          <span class="label">решается сейчас</span>
-        </div>
+      <div class="text-block">
+        <h1 class="title">Вместе мы делаем город лучше</h1>
+        <p class="subtitle">Электронные услуги администрации города Волжский</p>
       </div>
-    </div>
+      <stat/>
+
   </section>
 </template>
 
 <style scoped>
 
 .hero {
+
   margin-top: 65px;
-  width: 100%;
+
+  /* width: 100%; */
   /* height: 269px; */
   background: linear-gradient(to bottom right, #8231DF, #324AC0, #8231DF);
   color: white;
-  padding: 30px 0px;
-}
-
-.content {
-
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding: 30px 20px;
 }
 
 
@@ -95,26 +61,6 @@ const props = defineProps({
   opacity: 0.9;
 }
 
-.stats {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
-.stat {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  padding: 12px;
-  text-align: center;
-}
-
-.number {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
 
 .label {
   font-size: 13px;
@@ -122,9 +68,3 @@ const props = defineProps({
   opacity: 0.95;
 }
 </style>
-
-
-
-
-
-

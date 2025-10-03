@@ -1,18 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: "Волжские"
-  },
-  subtitle: {
-    type: String,
-    default: "Городские услуги"
-  },
-  actionText: {
-    type: String,
-    default: "Войти"
-  }
-})
+
 </script>
 
 <template>
@@ -20,11 +7,11 @@ const props = defineProps({
     <div class="logo-frame">
       <img src="/vectors/logo.svg" alt="logo" class="logo"/>
       <div class="text-frame">
-        <h2 class="title">{{ props.title }}</h2>
-        <p class="subtitle">{{ props.subtitle }}</p>
+        <h2 class="title">Волжские</h2>
+        <p class="subtitle">Городские услуги</p>
       </div>
     </div>
-    <button class="action-btn">{{ props.actionText }}</button>
+    <button class="action-btn">Войти</button>
   </header>
 </template>
 

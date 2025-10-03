@@ -1,8 +1,9 @@
 <template>
+  <heder />
+  <hero />
   <div class="flex flex-col g-4 p-5">
     
-    <heder />
-    <hero />
+
     <selection>
       <appeal :number="100" v-for="value in 4"/>
     </selection>
