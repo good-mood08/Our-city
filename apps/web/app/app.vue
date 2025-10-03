@@ -4,6 +4,7 @@
 
 <template >
 
+
     <NuxtPage class="bg-gray-50"/>
 
 </template>
