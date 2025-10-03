@@ -9,6 +9,10 @@ src: local('helvetica'), url("/helvetica_regular.otf") format('truetype');
 html {  
 font-family: 'helvetica';  
 }  
+body {
+    background-color: #F9FAFB;
+    color: white;
+}
 @layer components {
     .t-base {
         font-size: 0.875rem;

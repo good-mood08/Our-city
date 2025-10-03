@@ -3,68 +3,17 @@
 </script>
 
 <template>
-  <section class="hero">
+  <section class="flex bg-[linear-gradient(135deg,#8231DF,#5039E0,#324AC6,#4F28C5,#8231DF)] py-5 px-5 justify-center gap-6.25 flex-col">
+    <div>
+      <h1 class="text-white text-3xl font-semibold max-w-[310px] text-wrap ">Вместе мы делаем город лучше</h1>
+      <p class=" t-base text-[#DBEAFE]">Электронные услуги администрации города Волжский</p>
 
-      <div class="text-block">
-        <h1 class="title">Вместе мы делаем город лучше</h1>
-        <p class="subtitle">Электронные услуги администрации города Волжский</p>
-      </div>
-      <stat/>
+    </div>
+    <div class="grid gap-[10px] grid-cols-2 "> 
 
+    <stat/>
+    <stat/>
+
+    </div>
   </section>
 </template>
-
-<style scoped>
-
-.hero {
-
-  margin-top: 65px;
-
-  /* width: 100%; */
-  /* height: 269px; */
-  background: linear-gradient(to bottom right, #8231DF, #324AC0, #8231DF);
-  color: white;
-  padding: 30px 20px;
-}
-
-
-
-
-/* .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  
-
-
-  background: linear-gradient(135deg, #7B2FF7 0%, #00C6FF 100%);
-  color: white;
-} */
-
-.text-block {
-  margin-bottom: 20px;
-}
-
-.title {
-  margin: 0;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.subtitle {
-  margin: 5px 0 0 0;
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-
-.label {
-  font-size: 13px;
-  font-weight: 500;
-  opacity: 0.95;
-}
-</style>
