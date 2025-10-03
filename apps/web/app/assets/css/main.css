@@ -1,8 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+@import "tailwindcss";
+@import "@nuxt/ui";
+
 
 @font-face {  
 font-family: 'helvetica';  
@@ -11,3 +9,17 @@ src: local('helvetica'), url("/helvetica_regular.otf") format('truetype');
 html {  
 font-family: 'helvetica';  
 }  
+@layer components {
+    .t-base {
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    .t-lg {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .t-xl {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
