@@ -18,12 +18,12 @@ const props =  withDefaults(defineProps<{
 </script>
 
 <template>
-    <div class="py-5 px-3.75 content-center items-center bg-amber-50 shadow-sm shadow-stone-400 rounded-xl">
+    <div class="py-5 px-3.75 content-center items-center bg-white shadow shadow-[rgb(0,0,0,0.25)] rounded-xl">
         <div class="flex flex-row justify-between items-center gap-2.5" >
-            <p class="text-stone-950 font-medium text-sm text-balance">{{ props.title }}</p>
+            <p class="text-stone-950 t-base text-balance">{{ props.title }}</p>
             <status :variant="props.status_variant" v-bind="$attrs"/>
         </div>
-        <div class="flex flex-row items-center gap-0.5 text-sm font-medium text-zinc-500">
+        <div class="flex flex-row items-center gap-0.5 t-base text-[#757575] ">
             <img src="/vectors/map-pin.svg" alt="">
             <p>{{ props.adress }}</p>
             <img src="/vectors/dot.svg" alt="*">

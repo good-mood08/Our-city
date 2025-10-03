@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
 <div class=" flex py-5 flex-col gap-3 justify-start  ">
-    <h3 class=" text-stone-950 text-xl font-medium">{{ props.title }}</h3>
+    <h3 class=" text-stone-950 t-xl">{{ props.title }}</h3>
     <slot></slot>
 </div>
 </template>

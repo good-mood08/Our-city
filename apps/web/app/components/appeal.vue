@@ -20,22 +20,19 @@ const props =  defineProps({
 </script>
 
 <template>
-    <div class="main-frame flex flex-row py-5 px-2.5 justify-between items-center shadow shadow-stone-400 bg-amber-50 rounded-xl">
-        <div class="block-frame flex justify-center items-center gap-3.75 ">
-            <div class="icon w-12.5 h-12.5 flex justify-center items-center gap-3.75 bg-blue-100 rounded-[100%]">
+    <div class=" flex flex-row py-5 px-2.5 justify-between items-center shadow shadow-[rgb(0,0,0,0.25)] bg-[#ffffff] rounded-xl">
+        <div class=" flex justify-center items-center gap-3.75 ">
+            <div class=" w-12.5 h-12.5 flex justify-center items-center gap-3.75 bg-[#DBEAFE] rounded-[100%]">
                 <img :src="props.svg" alt="eror">
             </div>
-            <div class="text-frame  flex flex-col justify-center">
-                <h4 class="title text-stone-950 font-medium text-sm">{{ props.title }} </h4>
-                <p class="description text-zinc-500 text-sm font-medium">{{ props.description }}</p>
+            <div class="  flex flex-col justify-center">
+                <h4 class=" text-[#000000] t-base">{{ props.title }} </h4>
+                <p class=" text-[#757575] t-base">{{ props.description }}</p>
             </div>
         </div>
-        <div class="number-frame rounded-xl flex justify-center items-center px-1.5 py-0.5 bg-blue-100 ">
-            <span class="number font-semibold text-sm text-[#155DFC]">{{ props.number }}</span>
+        <div class=" rounded-xl flex justify-center items-center px-1.5 py-0.5 bg-[#DBEAFE] ">
+            <span class=" font-semibold text-sm text-[#155DFC]">{{ props.number }}</span>
         </div>
     </div>
 </template>
 
-
-<style scoped>
-</style>
