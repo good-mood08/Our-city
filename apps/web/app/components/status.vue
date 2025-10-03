@@ -6,25 +6,48 @@ const props = withDefaults(defineProps <{
 }>(), {
     variant: 'blue'
 })
+const text = ref('в работе')
+const text_color = ref('#155DFC')
+const frame_back_color = ref('#EFF6FF')
+const frame_border_color = ref('#BEDBFF')
+if (props.variant === "red") {
+    frame_border_color.value = '#FFD7A8'
+    frame_back_color.value = '#FFF7ED'
+    text_color.value = '#CE4100'
+    text.value = 'рассмативается'
+}
+if (props.variant === 'green') {
+    frame_border_color.value = '#B9F8CF'
+    frame_back_color.value = '#F0FDF4'
+    text_color.value = '#008236'
+    text.value = 'решено'
+}
 </script>
 
 
 <template>
-    <div v-if="variant ==='blue'" class=" flex py-1.5 px-2 rounded-[7px] dg-[#EFF6FF] border-1 border-[#BEDBFF]">
-        <span  class=" text-nowrap t-base text-[#155DFC]">
-            в работе
-        </span>
-    </div>
-    <div v-if="variant ==='red'" class=" flex py-1.5 px-2 rounded-[7px] bg-[#FFF7ED] border-1 border-[#FFD7A8]">
-        <span  class="text-nowrap t-base text-[#CE4100]">
-            рассмативается
-        </span>
-    </div>
-    <div v-if="variant ==='green'" class=" flex py-1.5 px-2 rounded-[7px] bg-[#F0FDF4] border-1 border-[#B9F8CF]">
-        <span class="text-nowrap t-base text-[#008236]">
-            решено
-        </span>
-    </div>
+    <div class="status-frame">
+            <span class="status">
+                {{ text }}
+            </span>
+        </div>
 </template>
 
 
+<style scoped>
+.status-frame {
+    display: inline-flex;
+    padding: 6px 8px ;
+    border-radius:7px ;
+    background-color: v-bind(frame_back_color) ;
+    border: solid 1px v-bind(frame_border_color);
+    flex-wrap: nowrap;
+    
+}
+.status {
+    color: v-bind(text_color) ;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+</style>
