@@ -4,8 +4,15 @@
 
 <template >
 
-
+  <UApp>
     <NuxtPage class="bg-gray-50"/>
 
+  </UApp>
+
 </template>
+
+
+
+
+
 
