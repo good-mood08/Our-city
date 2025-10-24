@@ -23,36 +23,6 @@ const props = withDefaults( defineProps<{
 
 
 
-<style scoped>
-
-/* .stats {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-} */
-
-/* .stat {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  padding: 12px;
-  text-align: center;
-} */
-
-
-
-/* .number {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 4px;
-} */
-
-
-</style>
-
-
-
 
 
 

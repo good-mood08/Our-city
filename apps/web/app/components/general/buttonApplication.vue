@@ -29,7 +29,7 @@ const colors = {
 
 <template>
   <button
-    class="flex flex-col items-center rounded-[10px] shadow shadow-[rgb(0,0,0,0.25)] bg-white py-2.5 w-44.25 flex-1 gap-[15px]"
+    class="cursor-pointer flex flex-col items-center rounded-[10px] shadow shadow-[rgb(0,0,0,0.25)] bg-white py-2.5 w-44.25 flex-1 gap-[15px]"
   >
     <div
       class="w-15 h-15 flex items-center justify-center rounded-full"

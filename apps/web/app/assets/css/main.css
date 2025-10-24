@@ -8,10 +8,13 @@ src: local('helvetica'), url("/helvetica_regular.otf") format('truetype');
 }  
 html {  
 font-family: 'helvetica';  
+/* background-color: #F9FAFB; */
+
 }  
 body {
+    color: rgb(0, 0, 0);
     background-color: #F9FAFB;
-    color: white;
+    
 }
 @layer components {
     .t-base {
@@ -26,4 +29,7 @@ body {
         font-size: 1.25rem;
         font-weight: 500;
     }
+    .shadow-base { box-shadow: 0 1px 3px 0 rgb(0,0,0,0.25)}
+    .shadow-lg { box-shadow: 0 2px 4px 0 rgb(0,0,0,0.25)}
+
 }

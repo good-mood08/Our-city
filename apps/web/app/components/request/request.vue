@@ -18,9 +18,9 @@ const props =  withDefaults(defineProps<{
 </script>
 
 <template>
-    <div class="py-5 px-3.75 content-center items-center bg-white shadow shadow-[rgb(0,0,0,0.25)] rounded-xl">
+    <div class="py-5 px-2.5 content-center items-center bg-white shadow shadow-[rgb(0,0,0,0.25)] rounded-xl">
         <div class="flex flex-row justify-between items-center gap-2.5" >
-            <p class="text-stone-950 t-base text-balance">{{ props.title }}</p>
+            <p class="text-black t-base text-wrap w-max">{{ props.title }}</p>
             <status :variant="props.status_variant" v-bind="$attrs"/>
         </div>
         <div class="flex flex-row items-center gap-0.5 t-base text-[#757575] ">

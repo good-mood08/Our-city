@@ -5,7 +5,7 @@
 <template >
 
   <UApp>
-    <NuxtPage class="bg-gray-50"/>
+    <NuxtPage class="bg-[#F9FAFB]"/>
 
   </UApp>
 
