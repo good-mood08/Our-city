@@ -55,6 +55,8 @@ const state = reactive({
                 >
                     <template #login>
 
+
+
                         <UForm :state="state" class="flex flex-col gap-4">
                         <UFormField label="Email" name="email">
                             <UInput icon="lucide:mail" v-model="state.email" class="w-full" color="info" size="lg" type="email" />
